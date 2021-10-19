@@ -10,10 +10,12 @@
 
     <p class="newsletter-text"></p>
 
+    <p class="user-log"></p>
+
     <script type="text/javascript">
 
 
-        alert('Mensaje 1');
+        //alert('Mensaje 1');
 
         console.log('Log message');
         console.info('Info message');
@@ -49,6 +51,22 @@
         const NEWSLETTER = `Hola ${NAME}, Como regalo de bienvenida al Club .... `;
 
         document.querySelector('.newsletter-text').innerHTML = NEWSLETTER;
+
+
+        let userLog = false;
+        let message = document.querySelector('.user-log');
+        
+
+        if (userLog) {
+
+            message.innerHTML = 'Usuario logueado';
+        
+        } else {
+
+            message.innerHTML = 'Usuario no logueado';
+        }
+
+
 
 
     </script>
